@@ -29,3 +29,8 @@ printf function have several limitation:
 * Max text length is 80 ascii characters.
 
 math library only have a subset of math functions.
+
+## Recommanded VSCode extensions
+
+* ms-vscode.cpptools
+* ms-vscode.makefile-tools
