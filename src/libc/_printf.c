@@ -34,12 +34,8 @@ static void __putbuff(void* p, void const* src, int len ) {
 }
 
 int puts(const char *str) {
-	char tmp[81];
-	size_t len = strlen(str);
-	len = (len < 80) ? len : 80;
-	memcpy(tmp, str, len);
-	tmp[len] = '\0';
-	return __strip_rn_trace(tmp);
+	trace(str, -1);
+	return strlen(str) + 1;
 }
 
 int printf(char const* fmt, ... ) {

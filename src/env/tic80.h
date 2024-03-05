@@ -223,6 +223,12 @@ typedef struct {
 #define WASM_FREE_RAM_SIZE 163840; // 160kb
 
 // ---------------------------
+//      WASM Special Constants
+// ---------------------------
+
+#define TIC80_PARAM_IGNORE (-1)
+
+// ---------------------------
 //      Drawing Functions
 // ---------------------------
 
