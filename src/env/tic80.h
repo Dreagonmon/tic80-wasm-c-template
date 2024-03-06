@@ -428,7 +428,7 @@ void mset(int32_t x, int32_t y, int32_t value);
 
 WASM_IMPORT("exit")
 // Interrupt program and return to console.
-__attribute__((noreturn)) void tic80_exit();
+void tic80_exit();
 
 WASM_IMPORT("time")
 // Returns how many milliseconds have passed since game started.

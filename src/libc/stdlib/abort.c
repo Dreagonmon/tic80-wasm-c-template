@@ -11,4 +11,5 @@ void abort(void) {
 void exit(__attribute__((unused)) int status) {
     // just ignore the status
     tic80_exit();
+    while (1);
 }
