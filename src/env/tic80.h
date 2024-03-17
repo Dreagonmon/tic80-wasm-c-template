@@ -152,7 +152,7 @@ typedef struct {
                                                // is OVR transparency.
     int8_t SCREEN_OFFSET_X;
     int8_t SCREEN_OFFSET_Y;
-    int8_t MOUSE_CURSOR;
+    uint8_t MOUSE_CURSOR;
     uint8_t BLIT_SEGMENT;
     uint8_t RESERVED[3];
 } VRAM;
