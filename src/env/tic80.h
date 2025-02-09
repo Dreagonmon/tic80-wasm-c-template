@@ -430,6 +430,10 @@ WASM_IMPORT("exit")
 // Interrupt program and return to console.
 void tic80_exit();
 
+WASM_IMPORT("reset")
+// Resets the TIC virtual "hardware" and immediately restarts the cartridge.
+void reset();
+
 WASM_IMPORT("time")
 // Returns how many milliseconds have passed since game started.
 float time();
