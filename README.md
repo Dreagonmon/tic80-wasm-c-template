@@ -4,7 +4,7 @@
 
 This template **doesn't** require `wasi-sdk`.
 All your need is `clang`(C language family frontend for LLVM),
-`lld`(Linker from the LLVM project) 
+`lld`(Linker from the LLVM project), `llvm`(llvm-ar tools from the LLVM project)
 and `tic80` packages.
 
 The advantage of not using `wasi-sdk` is:
@@ -19,7 +19,9 @@ The advantage of not using `wasi-sdk` is:
 * Modify `Makefile`, change `TARGET_NAME` to project name.
 * Compile only the wasm part: `make clean && make wasm`
 * Compile and make the cart: `make clean && make cart`
-* Compile and run the cart: `make clean && make run`
+* Compile and run the cart: `make clean && DEBUG=1 make run`
+* In order to speed up compiling, static linked library is used.
+  clean the static library cache: `make cleanlib`
 
 ## Limitation
 

@@ -3,8 +3,8 @@
 #include <tic80.h>
 #include <_malloc.h>
 
-#define max(a, b) (a > b) ? a : b
-#define min(a, b) (a < b) ? a : b
+#define max(a, b) ((a > b) ? a : b)
+#define min(a, b) ((a < b) ? a : b)
 
 static int x, y, t;
 static int r = 0;
@@ -57,8 +57,7 @@ void TIC() {
     line(0, md.y, 240, md.y, 11);
     circ(md.x, md.y, r, 11);
 
-    const int BUFSIZ = 10;
-    char buf[BUFSIZ];
+    char buf[20];
     sprintf(buf, "(%03d,%03d) %03d", md.x, md.y, r);
     // puts(buf);
     print(buf, 3, 3, 15, 0, 1, 1);
