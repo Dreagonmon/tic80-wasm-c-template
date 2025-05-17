@@ -4,12 +4,11 @@
 
 This template **doesn't** require `wasi-sdk`.
 All your need is `clang`(C language family frontend for LLVM),
-`lld`(Linker from the LLVM project), `llvm`(llvm-ar tools from the LLVM project)
+`lld`(wasm-ld from the LLVM project), `llvm`(llvm-ar tools from the LLVM project)
 and `tic80` packages.
 
 The advantage of not using `wasi-sdk` is:
 
-* Easy to compile, the wasm part can be compiled within `Termux for Android`.
 * Won't invoke `WASI` api by mistake, which is **not** provided by `tic80`.
 * No extra dependencies. Have a minimal `libc` (modified from wasi-sdk source).
 
